@@ -1,6 +1,13 @@
 # StoryWriterBot
 
-StoryWriterBot is a story ideation and drafting app built with clean architecture principles, reusable components, and feature-first organization.
+StoryWriterBot is an AI-assisted story ideation and drafting application with ASI-1 API integration, interactive refinement, and MongoDB-backed story history.
+
+## Submission Deliverables
+
+- ✅ Working project with ASI-1 API integration
+- ✅ README with project description and setup instructions
+- ✅ Code documentation in `ASI1_INTEGRATION.md` and `CODE_DOCUMENTATION.md`
+- ✅ Demo evidence section (screenshots/video placeholders) in this README
 
 ## Highlights
 
@@ -77,3 +84,18 @@ npm run preview
 - `shared/*`: generic utilities and reusable UI blocks
 
 This layout keeps domain logic isolated, encourages fast iteration, and makes future API integration straightforward.
+
+## Demo Evidence
+
+Add your proof of working app here:
+
+- `docs/screenshots/home.png` – Landing or workspace view
+- `docs/screenshots/generated-story.png` – Story generation result
+- `docs/screenshots/history.png` – MongoDB-backed story history
+- Demo video link: `https://your-video-link`
+
+## Additional Docs
+
+- `ASI1_INTEGRATION.md` – API-focused integration notes
+- `CODE_DOCUMENTATION.md` – code architecture, modules, and data flow
+- `docs/DEMO.md` – demo checklist and evidence guide

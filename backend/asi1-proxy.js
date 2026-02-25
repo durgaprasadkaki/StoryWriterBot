@@ -340,10 +340,20 @@ app.post('/api/chat', async (req, res) => {
 
 const PORT = process.env.PORT || 3001
 connectMongo().finally(() => {
-  app.listen(PORT, () => {
+  const server = app.listen(PORT, () => {
     console.log(`\n🚀 ASI-1 Proxy Server running on http://localhost:${PORT}`)
     console.log(`📝 API Key configured: ${ASI1_API_KEY ? 'Yes' : 'No'}`)
     console.log(`🔗 ASI-1 Base URL: ${ASI1_BASE_URL}`)
     console.log(`🗄️ MongoDB connected: ${isMongoConnected() ? 'Yes' : 'No'}\n`)
+  })
+
+  server.on('error', (error) => {
+    if (error && error.code === 'EADDRINUSE') {
+      console.log(`⚠️ Port ${PORT} is already in use. Reusing existing backend process.`)
+      process.exit(0)
+    }
+
+    console.error('🚨 Backend server startup error:', error)
+    process.exit(1)
   })
 })
