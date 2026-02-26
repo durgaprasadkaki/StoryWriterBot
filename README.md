@@ -85,17 +85,4 @@ npm run preview
 
 This layout keeps domain logic isolated, encourages fast iteration, and makes future API integration straightforward.
 
-## Demo Evidence
 
-Add your proof of working app here:
-
-- `docs/screenshots/home.png` – Landing or workspace view
-- `docs/screenshots/generated-story.png` – Story generation result
-- `docs/screenshots/history.png` – MongoDB-backed story history
-- Demo video link: `https://your-video-link`
-
-## Additional Docs
-
-- `ASI1_INTEGRATION.md` – API-focused integration notes
-- `CODE_DOCUMENTATION.md` – code architecture, modules, and data flow
-- `docs/DEMO.md` – demo checklist and evidence guide
